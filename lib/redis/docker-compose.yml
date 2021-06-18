@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  redis-server: 
+    image: 'redis'
+    networks: 
+      - absent-docker
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8083:8080
+    networks: 
+      - absent-docker

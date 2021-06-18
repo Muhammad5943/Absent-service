@@ -1,0 +1,15 @@
+version: '3.3'
+networks: 
+  - absent-docker
+
+services:
+  node-app:
+    build:
+      context: .  
+      dockerfile: Dockerfile
+    ports:
+      - "4001:8081"
+      depends_on:
+        - redis-server
+    networks: 
+      - absent-docker

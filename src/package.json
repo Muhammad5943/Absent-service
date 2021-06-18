@@ -1,0 +1,31 @@
+{
+  "name": "absent-service",
+  "version": "1.0.0",
+  "description": "Create Absent service",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "devStart": "nodemon redis-server",
+    "redis": "nodemon redis-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Auth",
+    "Service",
+    "Redis",
+    "WebSocket"
+  ],
+  "author": "Muhammad Aji Putra",
+  "license": "MIT",
+  "dependencies": {
+    "ecstatic": "^4.1.4",
+    "express": "^4.17.1",
+    "faker": "^5.5.3",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "redis": "^3.1.2",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "ws": "^7.5.0"
+  }
+}
